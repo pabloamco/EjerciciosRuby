@@ -6,11 +6,10 @@ fstanswer = gets.chomp
 def ciclo
   if "#{fstanswer}" == "#{fstanswer.downcase}" || "#{fstanswer.capitalize}"
     puts "#{sorda}"
-    while @answer != "ADIOS" do
-      ciclo
+    while @answer != "ADIOS" do ciclo
   if "#{fstanswer}" == "#{fstanswer.upcase}"
     puts "#{pendeja}"
     puts @answer
   end
-      end
+    end
 end
