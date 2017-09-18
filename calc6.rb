@@ -1,13 +1,11 @@
-def ciclo
-  @saludo = gets.chomp
-  sorda = "No logro escucharte podrías escribir mas alto?"
-  @pendeja = "No, No desde " + rand(1930..1950).to_s
-if saludo != saludo.upcase
-  puts sorda
-else puts pendeja
-     puts saludo
-end
-
-while ciclo == @pendeja do ciclo
-  break if @saludo == "ADIOS"
+pendeja = "No! no desde " + rand(1930..1950).to_s
+sorda = "Huh!? No te puedo leer puedes escribir mas alto?"
+answer = gets.chomp
+while answer != "ADIOS"
+  if answer == answer.upcase
+    puts pendeja
+  else
+    puts sorda
+  end
+  answer = gets.chomp
 end
